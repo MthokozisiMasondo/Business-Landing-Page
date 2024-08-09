@@ -22,26 +22,33 @@
     <link rel="stylesheet" href="./assets/css/tailwind/tailwind.min.css">
     <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/component-1/navigation/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/component-1/navigation/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/component-1/navigation/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body class="bg-gray-100">
 <div>
-    <div class="bg-white mx-auto">
-        <!-- COMPONENT 1: NAVIGATION -->
+             <!-- COMPONENT 1: NAVIGATION -->
+    <div class="sticky top-0 bg-white mx-auto">
         <div class="relative flex flex-wrap items-center justify-between w-full shrink-0">
             <div class="px-5">
                 <img class="h-8" src="assets/component-1/navigation/cache-bank-logo.png" alt="">
             </div>
-            <div class="hidden md:flex items-center justify-between text-dark-gray-800 gap-10">
-                <a href="" class="text-sm font-normal text-dark-gray-800 hover:text-dark-gray-900">Product</a>
-                <a href="" class="text-sm font-normal text-dark-gray-800 hover:text-dark-gray-900">Features</a>
-                <a href="" class="text-sm font-normal text-dark-gray-800 hover:text-dark-gray-900">Get Started</a>
-                <a href="" class="text-sm font-normal text-dark-gray-800 hover:text-dark-gray-900">Contact</a>
+            <!-- navigation for large screens -->
+            <div class="hidden md:flex items-center justify-between text-dark-grey-800 gap-10">
+                <a href="#product" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Product</a>
+                <a href="#features" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Features</a>
+                <a href="#get-started" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Get Started</a>
+                <a href="#contact" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Contact</a>
             </div>
             <div class=" hidden gap-7 p-4 items-center md:flex">
-                <button class="text-sm font-normal text-dark-grey-800">Log In</button>
-                <button class="px-4 py-2 text-sm font-bold text-blue bg-green-600 hover:bg-pink-500 rounded-xl">Sign Up</button>
+                <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log In</button>
+                <button class="px-4 py-2 text-sm font-semibold text-blue bg-green-600 hover:bg-pink-500 rounded-xl">Sign Up</button>
             </div>
+            <!-- navigation for mobile phones -->
             <button class="p-4 md:hidden" id="mobile-menu-toggle">
                 <svg
                 fill="none"
@@ -73,10 +80,10 @@
             </button>
             <div id="mobile-menu" class="absolute hidden md:hidden flex md:flex flex-col items-start justify-center w-full gap-3 overflow:hidden bg-white max-h-screen top-full px-4 py-8 shadow-main">
                 
-                    <a href="" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Product</a>
-                    <a href="" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Features</a>
-                    <a href="" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Get Started</a>
-                    <a href="" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Contact</a>
+                    <a href="#product" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Product</a>
+                    <a href="#features" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Features</a>
+                    <a href="#get-started" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Get Started</a>
+                    <a href="#contact" class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Contact</a>
                 
                     <button class="text-sm font-normal text-dark-grey-800">Log In</button>
                     <button class="px-4 py-2 text-sm font-bold text-blue bg-green-600 hover:bg-pink-500 rounded-xl">Sign Up</button>
@@ -84,10 +91,12 @@
             </div>
         </div>
     </div>
+            <!-- END OF COMPONENT 1: NAVIGATION-->
+
             <!-- COMPONENT 2: HERO AND ENDORSEMENTS-->
             <!-- HERO -->
-    <section class="w-full grid grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
-        <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+    <section id="product" class="w-full grid grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+        <div class="flex flex-col justify-center col-span-1 text-center lg:text-start lg:ml-10">
             <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
                 The Clever Place to Keep Your Cache
             </h1>
@@ -107,6 +116,7 @@
         <div>
 
     </section>
+        <!-- END OF HERO -->
 
         <!-- ENDORSEMENTS -->
          <section class="w-full">
@@ -115,18 +125,22 @@
                     Endorsed by global companies like
                 </p>
                 <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between">
+                      <!-- nike -->   
                     <svg xmlns="http://www.w3.org/2000/svg" width="155" height="65" viewBox="0 0 184 65" fill="none">
                         <path d="M20.2765 64.8827C14.7995 64.6671 10.3185 63.1822 6.81467 60.4243C6.14599 59.8975 4.55259 58.3178 4.01802 57.6515C2.59718 55.8814 1.6312 54.1586 0.986896 52.2472C-0.995712 46.3634 0.0246651 38.6425 3.90547 30.1689C7.22826 22.9145 12.3555 15.7196 21.3007 5.75465C22.6183 4.28833 26.5423 0 26.5676 0C26.577 0 26.3631 0.367039 26.094 0.813998C23.7681 4.67396 21.778 9.22062 20.6939 13.1568C18.9523 19.4727 19.1624 24.8928 21.3091 29.0957C22.79 31.9911 25.3287 34.4991 28.1835 35.8855C33.1813 38.3117 40.4984 38.5124 49.4342 36.4728C50.0494 36.3315 80.535 28.3133 117.18 18.6541C153.826 8.99389 183.814 1.09648 183.818 1.10298C183.828 1.11136 98.6805 37.2115 54.4788 55.9399C47.4788 58.905 45.6068 59.654 42.3159 60.7988C33.9034 63.7258 26.3678 65.1224 20.2765 64.8827Z" fill="#1B2559"/>
                       </svg>
 
+                      <!-- amazon -->
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64" style="fill: #1b2559">
                         <path d="M 32.376953 7 C 25.650953 7 18.181375 9.5161875 16.609375 17.742188 C 16.441375 18.618188 17.052859 19.067312 17.630859 19.195312 L 24.460938 19.892578 C 25.102937 19.858578 25.614281 19.260906 25.738281 18.628906 C 26.326281 15.794906 28.727922 14.394531 31.419922 14.394531 C 32.873922 14.394531 34.516953 14.940516 35.376953 16.228516 C 36.370953 17.666516 36.207031 19.617203 36.207031 21.283203 L 36.207031 22.232422 C 32.109031 22.688422 26.763641 22.966766 22.931641 24.634766 C 18.503641 26.528766 15.398437 30.392266 15.398438 36.072266 C 15.398438 43.340266 20.044141 47.003906 25.994141 47.003906 C 31.020141 47.003906 33.733281 45.798719 37.613281 41.886719 C 38.895281 43.724719 39.351219 44.630453 41.699219 46.564453 C 42.227219 46.844453 42.891422 46.789047 43.357422 46.373047 L 43.357422 46.4375 C 44.767422 45.1935 47.34125 42.961766 48.78125 41.759766 C 49.35525 41.291766 49.23125 40.561828 48.78125 39.923828 C 47.48925 38.157828 46.164062 36.694062 46.164062 33.414062 L 46.164062 22.544922 C 46.164062 17.926922 46.475109 13.654609 43.037109 10.474609 C 40.323109 7.8986094 35.812953 7 32.376953 7 z M 35.248047 27.835938 C 35.566797 27.841188 35.885078 27.851562 36.205078 27.851562 L 36.205078 29.367188 C 36.207078 32.095187 36.317687 34.337719 34.929688 36.761719 C 33.805687 38.729719 31.997672 39.919922 30.013672 39.919922 C 27.301672 39.919922 25.734375 37.891281 25.734375 34.863281 C 25.734375 29.653281 29.831016 28.141562 34.291016 27.851562 C 34.610016 27.830562 34.929297 27.830687 35.248047 27.835938 z M 54.171875 45.441406 C 52.353875 45.467406 50.22375 45.850422 48.59375 46.982422 C 48.09375 47.330422 48.166656 47.817953 48.722656 47.751953 C 50.556656 47.533953 54.609844 47.021359 55.339844 47.943359 C 56.067844 48.867359 54.533609 52.665281 53.849609 54.363281 C 53.641609 54.875281 54.092547 55.073594 54.560547 54.683594 C 57.612547 52.155594 58.428687 46.912531 57.804688 46.144531 C 57.494687 45.770531 55.991875 45.415406 54.171875 45.441406 z M 6.3671875 46.404297 C 5.9871875 46.454297 5.8363281 46.946688 6.2363281 47.304688 C 13.020328 53.368688 21.967828 57 31.923828 57 C 39.025828 57 47.315859 54.800578 53.005859 50.642578 C 53.945859 49.952578 53.124109 48.888922 52.162109 49.294922 C 45.784109 51.974922 38.815766 53.273437 32.509766 53.273438 C 23.159766 53.273438 14.140266 50.74725 6.8222656 46.53125 C 6.6602656 46.43925 6.4911875 46.388297 6.3671875 46.404297 z"/>
                       </svg>
 
+                      <!-- minecraft -->
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64" style="fill: #1b2559">
                         <path d="M53.5,10h-13l-2,5.5h-3L34,19l-6.5-9H14L3,45l12,11h13l2-8l1,1.5h4l5.5,6.5h13L60,23L53.5,10z M39,19h1h1.5h2l-1.14,3.04	l-4.569,0.286L39,19z M16.979,14h6.87l-0.635,2.223l-7.198,0.576L16.979,14z M17.5,43H7l3.518-10.224L13,32.5L10,41h8.192L17.5,43z M19.045,38.538L13.5,39l1-3h5.423L19.045,38.538z M43.97,43H33l3.874-13H33.47L31,36.5h-8l2.28-6.5H22l-1.217,3.517l-5.598,0.431	L16.5,30h-5.027l3.785-11h7.162l-0.571,2H25l-1,3.5h10h3h11.455L43.97,43z M49.154,21.615l-3.827,0.239L47,16h-4.354l0.764-2H51	L49.154,21.615z"/>
                       </svg>
 
+                      <!-- notion -->
                       <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -144,20 +158,20 @@
                 </div>
             </div>
          </section>
+         <!-- END OF COMPONENT 2: HERO AND ENDORSEMENTS -->
 
          <!-- COMPONENT 3: FEATURES -->
-
-    <div class="container mx-auto py-10 flex flex-col items-center justify-center">
-        <!-- HEADER -->
+    <div id="features" class="container mx-auto py-10 flex flex-col items-center justify-center">
+        <!-- header -->
         <div class="flex flex-col items-center justify-center mt-12">
           <h1 class="mb-4 text-3xl lg:text-4xl font-extrabold text-dark-grey-900 text-center">Elevate Your Banking with Cache</h1>
           <p class="text-lg text-center lg:w-7/12 text-grey-700">We merge cutting-edge banking with a deep understanding of software developers' needs. Experience tailored financial solutions, advanced security, and tech-focused support designed just for you.</p>
 
         </div>
-        <!-- END OF HEADER -->
+        <!-- end of header -->
         <!-- CARDS -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
-         <!-- CARD 1 -->
+         <!-- card 1 -->
           <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
             <div class="flex items-center justify-center bg-green-500 w-16 h-16 rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -172,7 +186,7 @@
 
           </div>
 
-          <!-- CARD 2-->
+          <!-- card 2 -->
           <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
             <div class="flex items-center justify-center bg-green-500 w-16 h-16 rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -187,7 +201,7 @@
 
           </div>
 
-          <!-- CARD 3 -->
+          <!-- card 3 -->
           <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
             <div class="flex items-center justify-center bg-green-500 w-16 h-16 rounded-2xl">
               <svg
@@ -211,7 +225,7 @@
 
           </div>
 
-          <!-- CARD 4 -->
+          <!-- card 4 -->
           <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
             <div class="flex items-center justify-center bg-pink-500 w-16 h-16 rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -226,7 +240,7 @@
 
           </div>
 
-          <!-- CARD 5 -->
+          <!-- card 5 -->
           <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
             <div class="flex items-center justify-center bg-pink-500 w-16 h-16 rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -241,7 +255,7 @@
 
           </div>
 
-          <!-- CARD 6 -->
+          <!-- card 6 -->
           <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
             <div class="flex items-center justify-center bg-pink-500 w-16 h-16 rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -293,9 +307,8 @@
          <!-- END OF STATISTICS -->
 
          <!-- GETTING STARTED -->
-          <!--                  STILL TO BE DEBUGGED                   -->
          <div class="w-full">
-          <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+          <div id="get-started" class="container flex flex-col items-center gap-16 mx-auto my-32">
             <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2">
                <div class="bg-cover bg-center hidden lg:block rounded-3xl" style="background-image: url(/assets/component-4/getting-started.png);"></div>
                 <div class="flex flex-col gap-2 text-center md:text-start">
@@ -303,7 +316,7 @@
                   <p class="text-base font-medium leading-7 text-dark-grey-600"><span>Cache Bank simplifies sign-up with a user-friendly website, streamlined account options, and an efficient verification process, making banking accessible and hassle-free for developers.</span></p>
                 
                 <!-- first card -->
-                <div class="grid w-full grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-10">
+                <div class="grid w-full grid-cols-1 mt-12 md:grid-cols-2 gap-y-16 gap-x-10">
                   <div class="flex flex-col items-start gap-1">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
                     <span class="text-base font-bold leading-7 text-white">1</span>
@@ -315,6 +328,7 @@
                       Go to Cache Bank, click "Sign Up" or "Open an Account"
                     </span></p>
                   </div>
+
                 <!-- second card -->
                   <div class="flex flex-col items-start gap-1">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
@@ -327,6 +341,7 @@
                       Select from checking, savings, or developer specific accounts.
                     </span></p>
                   </div>
+
                   <!-- third card-->
                   <div class="flex flex-col items-start gap-1">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
@@ -339,6 +354,7 @@
                       Complete the form with your details and identification for security.
                     </span></p>
                   </div>
+
                    <!-- fourth card -->
                    <div class="flex flex-col items-start gap-1">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
@@ -355,12 +371,14 @@
                 </div>
               </div>
             </div>
+             <!-- END OF COMPONENT 4: STATS AND GETTING STARTED -->
 
             <!-- COMPONENT 5: CONTACT AND FOOTER -->
              <!-- CONTACT -->
-              <div class="w-full">
+              <div id="contact" class="w-full">
                 <div class="container flex flex-col items-center mx-auto my-32">
                   <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-3">
+
                     <!-- CARD 1: Email -->
                     <div class="flex flex-col items-center gap-3 px-8 py-8 bg-white rounded-3xl shadow-main">
                       <span>
@@ -370,7 +388,7 @@
                       </span>
                       <p class="text-2xl font-extrabold text-dark-grey-900">Email</p>
                       <p class="text-base leading-7 text-dark-gray-600">Contact us at</p>
-                      <p class="text-lg font-bold text-green-500" href="">hi@cachebank.com</p>
+                      <p class="text-lg font-bold text-green-500"><a target="_blank" href="https://www.google.com/gmail/about/">hi@cachebank.com</a></p>
                     </div>
 
                     <!-- CARD 2: Phone-->
@@ -382,7 +400,7 @@
                       </span>
                       <p class="text-2xl font-extrabold text-dark-grey-900">Phone</p>
                       <p class="text-base leading-7 text-dark-gray-600">Reach out to us by phone</p>
-                      <p class="text-lg font-bold text-green-500" href="">+215-486-5135</p>
+                      <p class="text-lg font-bold text-green-500"><a target="_blank" href="tel:+215-486-5135">+215-486-5135</a></p>
                     </div>
 
                     <!-- CARD 3: Location -->
@@ -394,34 +412,35 @@
                       </span>
                       <p class="text-2xl font-extrabold text-dark-grey-900">Location</p>
                       <p class="text-base leading-7 text-dark-gray-600">Find us at our office</p>
-                      <p class="text-lg font-bold text-green-500" href="">15 Tech Alley, Cape Town</p>
+                      <p class="text-lg font-bold text-green-500"><a target="_blank" href="https://www.google.co.za/maps/place/CodeSpace/@-33.9238336,18.4441959,16.13z/data=!4m6!3m5!1s0x1dcc5d9854044ed9:0x6a0ebf49da5aabab!8m2!3d-33.9247137!4d18.4487146!16s%2Fg%2F11dztq4_0d?hl=en&entry=ttu">15 Tech Alley, Cape Town</a></p>
                     </div>
                   </div>
                 </div>
               </div>
          </div>
+         <!-- END OF CONTACTS -->
 
          <!-- FOOTER -->
     <div class="w-full bg-green-500">
         <div class="container flex flex-col mx-auto">
           <div class="flex flex-col items-center gap-6 my-8 lg:flex-row justify-center">
-            <!-- SOCIALS -->
+            <!-- SOCIALS AND COPYRIGHT -->
              <!-- facebook -->
             <div class="flex items-center gap-8">
-              <a href="" class="text-dark-grey-600 hover:text-dark-grey-900">
+              <a target="_blank" href="https://www.facebook.com/" class="text-dark-grey-600 hover:text-dark-grey-900">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z" fill="currentColor"/>
                   <mask id="mask0_3320_6483" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="7" y="3" width="10" height="18">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z" fill="black"/>
                   </mask>
                   <g mask="url(#mask0_3320_6483)"/>
-                </svg>                
+                </svg>               
               </a>
             </div>
 
             <!-- twitter -->
             <div class="flex items-center gap-8">
-              <a href="" class="text-dark-grey-600 hover:text-dark-grey-900">
+              <a target="_blank" href="https://x.com/" class="text-dark-grey-600 hover:text-dark-grey-900">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8182 6.14597C21.1356 6.44842 20.4032 6.65355 19.6337 6.74512C20.4194 6.27461 21.0208 5.5283 21.3059 4.64176C20.5689 5.07748 19.7553 5.39388 18.8885 5.56539C18.1943 4.82488 17.207 4.36364 16.1118 4.36364C14.0108 4.36364 12.3072 6.06718 12.3072 8.16706C12.3072 8.46488 12.3408 8.75576 12.4058 9.03391C9.24436 8.87512 6.44106 7.36048 4.56485 5.05894C4.23688 5.61985 4.0503 6.27342 4.0503 6.97109C4.0503 8.29106 4.72246 9.45573 5.74227 10.1371C5.11879 10.1163 4.53239 9.94476 4.01903 9.65967V9.70718C4.01903 11.5498 5.33088 13.0876 7.07033 13.4376C6.75164 13.5234 6.41558 13.5709 6.06791 13.5709C5.82224 13.5709 5.58467 13.5465 5.35173 13.5002C5.83612 15.0125 7.2407 16.1123 8.90485 16.1424C7.60343 17.1622 5.96246 17.7683 4.18012 17.7683C3.87303 17.7683 3.57055 17.7498 3.27273 17.7162C4.95658 18.7974 6.95564 19.4278 9.10418 19.4278C16.1026 19.4278 19.9281 13.6312 19.9281 8.60397L19.9153 8.11145C20.6628 7.57833 21.3094 6.90851 21.8182 6.14597Z" fill="currentColor"/>
                   <mask id="mask0_3320_6484" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="3" y="4" width="19" height="16">
@@ -434,7 +453,7 @@
 
             <!-- github -->
             <div class="flex items-center gap-8">
-              <a href="" class="text-dark-grey-600 hover:text-dark-grey-900">
+              <a target="_blank" href="https://github.com/" class="text-dark-grey-600 hover:text-dark-grey-900">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
                   <path d="M12 3C7.0275 3 3 7.13211 3 12.2284C3 16.3065 5.5785 19.7648 9.15375 20.9841C9.60375 21.0709 9.76875 20.7853 9.76875 20.5403C9.76875 20.3212 9.76125 19.7405 9.7575 18.9712C7.254 19.5277 6.726 17.7332 6.726 17.7332C6.3165 16.6681 5.72475 16.3832 5.72475 16.3832C4.9095 15.8111 5.78775 15.8229 5.78775 15.8229C6.6915 15.887 7.16625 16.7737 7.16625 16.7737C7.96875 18.1847 9.273 17.777 9.7875 17.5414C9.8685 16.9443 10.1003 16.5381 10.3575 16.3073C8.35875 16.0764 6.258 15.2829 6.258 11.7471C6.258 10.7399 6.60675 9.91659 7.18425 9.27095C7.083 9.03774 6.77925 8.0994 7.263 6.82846C7.263 6.82846 8.01675 6.58116 9.738 7.77462C10.458 7.56958 11.223 7.46785 11.988 7.46315C12.753 7.46785 13.518 7.56958 14.238 7.77462C15.948 6.58116 16.7017 6.82846 16.7017 6.82846C17.1855 8.0994 16.8818 9.03774 16.7917 9.27095C17.3655 9.91659 17.7142 10.7399 17.7142 11.7471C17.7142 15.2923 15.6105 16.0725 13.608 16.2995C13.923 16.5765 14.2155 17.1423 14.2155 18.0071C14.2155 19.242 14.2043 20.2344 14.2043 20.5341C14.2043 20.7759 14.3617 21.0647 14.823 20.9723C18.4237 19.7609 21 16.3002 21 12.2284C21 7.13211 16.9703 3 12 3Z" fill="currentColor"/>
                 </svg>
@@ -443,7 +462,7 @@
 
             <!-- linkedin -->
             <div class="flex items-center gap-8">
-              <a href="" class="text-dark-grey-600 hover:text-dark-grey-900">
+              <a target="_blank" href="https://za.linkedin.com/" class="text-dark-grey-600 hover:text-dark-grey-900">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" fill="none">
                   <path d="M16.2 0H1.8C0.81 0 0 0.81 0 1.8V16.2C0 17.19 0.81 18 1.8 18H16.2C17.19 18 18 17.19 18 16.2V1.8C18 0.81 17.19 0 16.2 0ZM5.4 15.3H2.7V7.2H5.4V15.3ZM4.05 5.67C3.15 5.67 2.43 4.95 2.43 4.05C2.43 3.15 3.15 2.43 4.05 2.43C4.95 2.43 5.67 3.15 5.67 4.05C5.67 4.95 4.95 5.67 4.05 5.67ZM15.3 15.3H12.6V10.53C12.6 9.81004 11.97 9.18 11.25 9.18C10.53 9.18 9.9 9.81004 9.9 10.53V15.3H7.2V7.2H9.9V8.28C10.35 7.56 11.34 7.02 12.15 7.02C13.86 7.02 15.3 8.46 15.3 10.17V15.3Z" fill="currentColor"/>
                 </svg>
@@ -452,7 +471,7 @@
 
             <!-- instagram -->
             <div class="flex items-center gap-8">
-              <a href="" class="text-dark-grey-600 hover:text-dark-grey-900">
+              <a target="_blank" href="https://www.instagram.com/" class="text-dark-grey-600 hover:text-dark-grey-900">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#000">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M7.60063 2.18182H16.3991C19.3873 2.18182 21.8183 4.61281 21.8182 7.60074V16.3993C21.8182 19.3872 19.3873 21.8182 16.3991 21.8182H7.60063C4.6127 21.8182 2.18182 19.3873 2.18182 16.3993V7.60074C2.18182 4.61281 4.6127 2.18182 7.60063 2.18182ZM16.3993 20.0759C18.4266 20.0759 20.0761 18.4266 20.0761 16.3993H20.0759V7.60074C20.0759 5.57348 18.4265 3.92405 16.3991 3.92405H7.60063C5.57336 3.92405 3.92405 5.57348 3.92405 7.60074V16.3993C3.92405 18.4266 5.57336 20.0761 7.60063 20.0759H16.3993ZM6.85714 12.0001C6.85714 9.16424 9.16418 6.85714 12 6.85714C14.8358 6.85714 17.1429 9.16424 17.1429 12.0001C17.1429 14.8359 14.8358 17.1429 12 17.1429C9.16418 17.1429 6.85714 14.8359 6.85714 12.0001ZM8.62798 12C8.62798 13.8593 10.1407 15.3719 12 15.3719C13.8593 15.3719 15.372 13.8593 15.372 12C15.372 10.1406 13.8594 8.6279 12 8.6279C10.1406 8.6279 8.62798 10.1406 8.62798 12Z" fill="currentColor"/>
                   <mask id="mask0_3320_6487" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
@@ -470,7 +489,9 @@
             </div>
         </div>
     </div>
+    <!-- END OF COMPONENT 5: CONTACT AND FOOTER -->
 
+    <!-- SCRIPTS -->
     <script>
         document.getElementById("mobile-menu-toggle").addEventListener("click", function() {document.getElementById("mobile-menu").classList.toggle("hidden")} )
     </script>
