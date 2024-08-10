@@ -1,19 +1,7 @@
-# Installation
+## PowerPoint Presentation
 
-```
-# Install dependencies
-npm install
+>    https://1drv.ms/p/s!AjETbIMNdgj3dLSZwY9LvcCI0ak?e=ZmrDo8
 
-# Start the development server with live preview using Browsersync
-npm run browsersync
+## Loom Video
 
-# Compile Tailwind CSS
-npm run build
-
-# Compile Tailwind CSS minified
-npm run build-minify
-
-```
-
-# Presentation Talking Points and Presentation Slide Template
-Check out the Project Overview in this GitHub Repo for the guide to talking points for your presentation as well the starter template for your Google Slides here: https://github.com/CodeSpace-Academy/SDF_Portfolio_Piece_StudentNo_Classcode_Group_Name-Surname_SDF11/blob/main/11_portfolio_piece_1.md
+>    https://www.loom.com/share/2ea4873915db4cb7b495048147014180?sid=97dc088a-9b8d-414f-b49e-7cb4ab32e759 
