@@ -1,7 +1,3 @@
-## PowerPoint Presentation
+# Cache Bank Landing Page
 
->    https://1drv.ms/p/s!AjETbIMNdgj3dLSZwY9LvcCI0ak?e=ZmrDo8
-
-## Loom Video
-
->    https://www.loom.com/share/2ea4873915db4cb7b495048147014180?sid=97dc088a-9b8d-414f-b49e-7cb4ab32e759 
+This project is a responsive and modern business landing page built using HTML and Tailwind CSS. It features a clean, professional design optimized for showcasing business services, products and features.
